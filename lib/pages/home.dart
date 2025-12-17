@@ -15,7 +15,6 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
 
     data = data.isNotEmpty ? data : ModalRoute.of(context)!.settings.arguments as Map;
-    print(data);
 
     // set background
     String bgImage = data['isDayTime'] ? 'day.png' : 'night.png';
